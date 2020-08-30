@@ -1,10 +1,11 @@
 require('../Pages/LandingPage.js');
 require('../Pages/CustomerPage.js');
+
 var CustomerLoginPage = function () {
 
     var header = element(by.css('strong.mainHeading'));
     var homeBtn = element(by.css('.btn home'));
-    var yourNameDropdown = element.all(by.css('select#userSelect'));
+    var yourNameDropdown = element.all(by.css('option.ng-binding')); 
     var loginBtn = element(by.css('button.btn btn-default'));
 
     this.headerText = function () {
@@ -12,12 +13,12 @@ var CustomerLoginPage = function () {
     };
 
     this.countDropdownOptions = function () {
-        yourNameDropdown.getText();
+        return yourNameDropdown.count();
     };
 
     this.returnToLandingPage = function () {
         homeBtn.click();
-        return require('.LandingPage.js');
+        return require('./LandingPage.js');
     };
 
     this.choseUser = function (index) {
@@ -26,7 +27,7 @@ var CustomerLoginPage = function () {
 
     this.clickOnLoginBut = function () {
         loginBtn.click();
-        return require('.CustomerPage.js');
+        return require('./CustomerPage.js');
     };    
 };
 module.exports = new CustomerLoginPage();

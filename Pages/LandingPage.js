@@ -8,13 +8,17 @@ var LandingPage = function () {
     var BankManagerLoginBtn = element(by.css('div:nth-child(3) > button'));
 
 
-    this.headerText = function () {
+    this.verifyHeaderText = function () {
         return header.getText();
+    };
+
+    this.verifyHomeBtn = function () {
+        return homeBtn.isDisplayed();
     };
 
     this.accessCustomerLogin = function () {
         custLoginBtn.click();
-        return require('.CustomerLoginPage.js');
+        return require('./CustomerLoginPage.js');
     };
 
     this.accessBankManagerArea = function () {
