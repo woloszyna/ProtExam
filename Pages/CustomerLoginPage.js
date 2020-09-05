@@ -6,9 +6,9 @@ var CustomerLoginPage = function () {
     var header = element(by.css('strong.mainHeading'));
     var homeBtn = element(by.css('.btn home'));
     var yourNameDropdown = element.all(by.css('option.ng-binding')); 
-    var loginBtn = element(by.css('button.btn btn-default'));
+    var loginBtn = element(by.css('.btn-default'));
 
-    this.headerText = function () {
+    this.verifyHeaderText = function () {
         return header.getText();
     };
 
@@ -22,10 +22,10 @@ var CustomerLoginPage = function () {
     };
 
     this.choseUser = function (index) {
-        element(by.model('custId')).$('value="' + index + '"').click();
+        element(by.model('custId')).$('[value="' + index + '"]').click();
     };
 
-    this.clickOnLoginBut = function () {
+    this.clickOnLoginBtn = function () {
         loginBtn.click();
         return require('./CustomerPage.js');
     };    
