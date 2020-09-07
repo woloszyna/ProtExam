@@ -15,7 +15,9 @@ describe('Customer\'s Login Page verification', function () {
 
     it('Shows all login options in the dropdown', function () {
         var dropdownOptions = CustomerLoginPage.countDropdownOptions();
-        expect(dropdownOptions).toBe(5); 
+        expect(dropdownOptions).toBe(5);
+        CustomerLoginPage.dropdown.click();
+
     });
 
     it('can login as Hermoine Granger', function () {

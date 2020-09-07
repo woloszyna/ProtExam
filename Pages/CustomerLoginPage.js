@@ -5,7 +5,8 @@ var CustomerLoginPage = function () {
 
     var header = element(by.css('strong.mainHeading'));
     var homeBtn = element(by.css('.btn home'));
-    var yourNameDropdown = element.all(by.css('option.ng-binding')); 
+    var yourNameDropdown = element.all(by.css('option.ng-binding'));
+    var dropdown = element(by.model('custId'));
     var loginBtn = element(by.css('.btn-default'));
 
     this.verifyHeaderText = function () {
