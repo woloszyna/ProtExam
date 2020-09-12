@@ -11,7 +11,7 @@ describe('Customer\'s Login process', function () {
     it('All elements displayed on Customer\'s Login Page', function () {
         var headerText = CustomerLoginPage.verifyHeaderText();
         expect(headerText).toBe('XYZ Bank');
-        //TODO: Check if dropdown is present
+        //TODO: #3 Check if dropdown is present
     });
 
     it('All Customer names present in the dropdown', function () {

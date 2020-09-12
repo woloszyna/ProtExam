@@ -50,10 +50,10 @@ describe('Bank Manager\'s Login process', function () {
     it('Customer can be successfully created', function () {
         var AddCustomer = BankManagerLogin.accessAddCustomer();
         AddCustomer.addCustomer();
-        //TODO: Go to Customer's and verify that customer is created
+        //TODO: #2 Go to Customer's and verify that customer is created
     });
 
     afterAll(function () {
-        //TODO: Access customer that was created and delete them
+        //TODO: #1 Access customer that was created and delete them
     });
 });
