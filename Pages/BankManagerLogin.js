@@ -23,6 +23,5 @@ var BankManagerLogin = function () {
         customers.click();
         return require('./Customers');
     };
-    
 };
 module.exports = new BankManagerLogin();
