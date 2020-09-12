@@ -3,7 +3,7 @@ require('../Pages/BankManagerArea.js');
 var LandingPage = function () {
     
     var header = element(by.css('strong.mainHeading'));
-    var homeBtn = element(by.css('.btn home'));
+    var homeBtn = element(by.buttonText('Home'));
     var custLoginBtn = element(by.css('div.borderM.box.padT20 > div:nth-child(1) > button'));
     var BankManagerLoginBtn = element(by.css('div:nth-child(3) > button'));
 

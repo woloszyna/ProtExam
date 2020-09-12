@@ -1,4 +1,4 @@
-describe('Customer\'s Login Page verification', function () {
+describe('Customer\'s Login process', function () {
 
     var LandingPage = require('../Pages/LandingPage');
     var CustomerLoginPage = require('../Pages/CustomerLoginPage');
@@ -8,21 +8,19 @@ describe('Customer\'s Login Page verification', function () {
         LandingPage.accessCustomerLogin();
     });
 
-    it('Displays header on Customer\'s Login Page', function () {
+    it('All elements displayed on Customer\'s Login Page', function () {
         var headerText = CustomerLoginPage.verifyHeaderText();
         expect(headerText).toBe('XYZ Bank');
+        //TODO: Check if dropdown is present
     });
 
-    it('Shows all login options in the dropdown', function () {
+    it('All Customer names present in the dropdown', function () {
         var dropdownOptions = CustomerLoginPage.countDropdownOptions();
         expect(dropdownOptions).toBe(5);
-        CustomerLoginPage.dropdown.click();
-
     });
 
-    it('can login as Hermoine Granger', function () {
+    it('Hermoine Granger can log in', function () {
         CustomerLoginPage.choseUser(1);
-        //browser.wait(CustomerLoginPage.loginBtn).isPresent();//verify if that works
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var headerText = customerPage.verifyHeaderText();
         expect(headerText).toBe('XYZ Bank');
@@ -30,7 +28,7 @@ describe('Customer\'s Login Page verification', function () {
         expect(user).toBe('Hermoine Granger');
     });
 
-    it('can login as Harry Potter', function () {
+    it('Harry Potter can log in', function () {
         CustomerLoginPage.choseUser(2);
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var headerText = customerPage.verifyHeaderText();
@@ -39,7 +37,7 @@ describe('Customer\'s Login Page verification', function () {
         expect(user).toBe('Harry Potter');
     });
 
-    it('can login as Ron Weasly', function () {
+    it('Ron Weasly can log in', function () {
         CustomerLoginPage.choseUser(3);
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var headerText = customerPage.verifyHeaderText();
@@ -48,7 +46,7 @@ describe('Customer\'s Login Page verification', function () {
         expect(user).toBe('Ron Weasly');
     });
 
-    it('can login as Albus Dumbledore', function () {
+    it('Albus Dumbledore can log in', function () {
         CustomerLoginPage.choseUser(4);
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var headerText = customerPage.verifyHeaderText();
@@ -57,7 +55,7 @@ describe('Customer\'s Login Page verification', function () {
         expect(user).toBe('Albus Dumbledore');
     });
     
-    it('can login as Neville Longbottom', function () {
+    it('Neville Longbottom can log in', function () {
         CustomerLoginPage.choseUser(5);
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var headerText = customerPage.verifyHeaderText();
@@ -66,11 +64,21 @@ describe('Customer\'s Login Page verification', function () {
         expect(user).toBe('Neville Longbottom');
     });
 
-    it('can log in and log out successfully', function () {
+    it('Customer can log in and log out successfully', function () {
         CustomerLoginPage.choseUser(1);
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var loginPage = customerPage.logOut();
-        var dropdownOptions = CustomerLoginPage.countDropdownOptions();
+        var dropdownOptions = loginPage.countDropdownOptions();
         expect(dropdownOptions).toBe(5); 
+    });
+    
+    it('Customer Login process can return to the Landing Page', function () {
+        CustomerLoginPage.returnToLandingPage();
+        expect(element(by.css('div.borderM.box.padT20 > div:nth-child(1) > button')).isPresent()).toBeTruthy(); //Is there any way to call this element from LandingPage.custLoginBtn?
+        expect(element(by.css('div:nth-child(3) > button')).isPresent()).toBeTruthy(); //Is there any way to call this element from LandingPage.BankManagerLoginBtn?
+    });
+
+    it('Bank Account Manager can access Bank Manager Login area', function () {
+        
     });
 });
