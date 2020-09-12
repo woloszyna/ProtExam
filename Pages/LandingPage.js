@@ -1,5 +1,5 @@
 require('../Pages/CustomerLoginPage.js');
-require('../Pages/BankManagerArea.js');
+require('../Pages/BankManagerLogin.js');
 var LandingPage = function () {
     
     var header = element(by.css('strong.mainHeading'));
@@ -21,9 +21,9 @@ var LandingPage = function () {
         return require('./CustomerLoginPage.js');
     };
 
-    this.accessBankManagerArea = function () {
+    this.accessBankManagerLogin = function () {
         BankManagerLoginBtn.click();
-        return require('./BankManagerArea.js');
+        return require('./BankManagerLogin.js');
     };
 
 };

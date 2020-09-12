@@ -14,7 +14,8 @@ exports.config = {
   // Spec patterns are relative to the current working directory when
   // protractor is called.
   specs: ['../Tests/*spec.js'],
-
+  //specs: ['../Tests/BankManager_LoginFunctionality.spec.js'],
+  
   onPrepare: function () {
     // Add a screenshot reporter and store screenshots to `/Reports/screenshots`:
     jasmine.getEnv().addReporter(new HtmlReporter({
