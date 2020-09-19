@@ -1,9 +1,11 @@
 var BankManagerLogin = function () {
 
     var header = element(by.css('strong.mainHeading'));
+    var homeBtn = element(by.buttonText('Home'));
     var addCust = element(by.buttonText('Add Customer'));
     var openAcc = element(by.buttonText('Open Account'));
-    var customers = element(by.buttonText('Customers'));
+    var customersBtn = element(by.buttonText('Customers'));
+    
 
     this.verifyHeaderText = function () {
         return header.getText();
@@ -11,7 +13,7 @@ var BankManagerLogin = function () {
 
     this.accessAddCustomer = function () {
         addCust.click();
-        return require('./AddCustomer.js');
+        return require('./AddCustomer');
     };
 
     this.accessOpenAccount = function () {
@@ -20,8 +22,13 @@ var BankManagerLogin = function () {
     };
 
     this.accessCustomers = function () {
-        customers.click();
+        customersBtn.click();
         return require('./Customers');
+    };
+
+    this.accessLandingPage = function () {
+        homeBtn.click();
+        return require('./LandingPage');
     };
 };
 module.exports = new BankManagerLogin();

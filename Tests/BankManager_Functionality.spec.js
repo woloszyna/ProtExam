@@ -22,35 +22,66 @@ describe('Bank Manager\'s Login process', function () {
         expect(addCust.isPresent()).toBe(true);
         expect(openAcc.isPresent()).toBe(true);
         expect(customers.isPresent()).toBe(true);
-    }); 
+    });
+
+    it('Bank Manager can revert back to the Landing Page from Login Page', function () {
+        BankManagerLogin.accessLandingPage();
+        var custLoginBtn = element(by.css('div.borderM.box.padT20 > div:nth-child(1) > button'));
+        expect(custLoginBtn.isPresent()).toBe(true);
+    });
     
     it('Bank Account Manager can access \'Add Customer\' page', function () {      
         var AddCustomer = BankManagerLogin.accessAddCustomer();
         var headerText = AddCustomer.verifyHeaderText();
         expect(headerText).toBe('XYZ Bank');
+    });
+    
+
+    it('All elements are displayed on the \'Add Customer\' Page', function () {
+        BankManagerLogin.accessAddCustomer();
         var firstName = element(by.model('fName'));
         var lastName = element(by.model('lName'));
         var postCode = element(by.model('postCd'));
         var addCustomerBtn = element(by.css('button.btn-default'));
-        expect(firstName.isPresent).toBe(true);
-        expect(lastName.isPresent).toBe(true);
-        expect(postCode.isPresent).toBe(true);
-        expect(addCustomerBtn.isPresent).toBe(true); 
+        expect(firstName.isPresent()).toBe(true);
+        expect(lastName.isPresent()).toBe(true);
+        expect(postCode.isPresent()).toBe(true);
+        expect(addCustomerBtn.isPresent()).toBe(true);
     });
+    
+    it('Bank Manager can revert back to the Landing Page from \'Add Customer\' Page', function () {
+        var addCustomer = BankManagerLogin.accessAddCustomer();
+        var LandingPage = addCustomer.accessLandingPage();
+        var custLoginBtn = element(by.css('div.borderM.box.padT20 > div:nth-child(1) > button'));
+        expect(custLoginBtn.isPresent()).toBe(true);
+    });
+    
+
+
 
     it('Bank Account Manager can access xxxx page', function () {
         
     });
 
+
+    //More tests go here
+
     it('Bank Account Manager can access xxx page', function () {
         
     });
+
+    //More tests go here
 
 
     it('Customer can be successfully created', function () {
         var AddCustomer = BankManagerLogin.accessAddCustomer();
         AddCustomer.addCustomer();
         //TODO: #2 Go to Customer's and verify that customer is created
+        var Customers = AddCustomer.accessCustomers();
+        var custCount = Customers.countCustomers();
+        expect(custCount).toBe(6);
+        Customers.searchForCreated();
+        
     });
 
     afterAll(function () {

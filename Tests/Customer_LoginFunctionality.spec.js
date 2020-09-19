@@ -11,12 +11,15 @@ describe('Customer\'s Login process', function () {
     it('All elements displayed on Customer\'s Login Page', function () {
         var headerText = CustomerLoginPage.verifyHeaderText();
         expect(headerText).toBe('XYZ Bank');
+        var dropDown = element(by.model('custId'));
+        expect(dropDown.isPresent()).toBe(true);
         //TODO: #3 Check if dropdown is present
     });
 
     it('All Customer names present in the dropdown', function () {
         var dropdownOptions = CustomerLoginPage.countDropdownOptions();
-        expect(dropdownOptions).toBe(5);
+        expect(dropdownOptions).toBe(6);
+        CustomerLoginPage.expandDropdown();
     });
 
     it('Hermoine Granger can log in', function () {
@@ -69,7 +72,7 @@ describe('Customer\'s Login process', function () {
         var customerPage = CustomerLoginPage.clickOnLoginBtn();
         var loginPage = customerPage.logOut();
         var dropdownOptions = loginPage.countDropdownOptions();
-        expect(dropdownOptions).toBe(5); 
+        expect(dropdownOptions).toBe(6); 
     });
     
     it('Customer Login process can return to the Landing Page', function () {

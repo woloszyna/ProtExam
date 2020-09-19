@@ -1,6 +1,8 @@
 var AddCustomer = function () {
 
     var header = element(by.css('strong.mainHeading'));
+    var homeBtn = element(by.buttonText('Home'));
+    var customersBtn = element(by.css('div.center > button:nth-child(3)'));
     var firstName = element(by.model('fName'));
     var lastName = element(by.model('lName'));
     var postCode = element(by.model('postCd'));
@@ -24,7 +26,7 @@ var AddCustomer = function () {
     };
 
     this.accessCustomers = function () {
-        customers.click();
+        customersBtn.click();
         return require('./Customers');
     };
 
@@ -35,6 +37,11 @@ var AddCustomer = function () {
         addCustomerBtn.click();
         var alert = browser.switchTo().alert();
         alert.accept();
+    };
+
+    this.accessLandingPage = function () {
+        homeBtn.click();
+        return require('./LandingPage');
     };
 
 }
