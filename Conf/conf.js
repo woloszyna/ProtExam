@@ -20,14 +20,6 @@ exports.config = {
     },
   ],
 
-
-  /*
-  capabilities: {
-    'browserName': 'chrome',
-    'browserName': 'firefox'
-  },
-  */
-
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
