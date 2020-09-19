@@ -4,9 +4,29 @@ exports.config = {
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
+  multiCapabilities: [
+    {
+      'browserName': 'firefox',
+        'moz:firefoxOptions': {
+        args: [ "--headless" ]
+   }
+    },
+
+    {
+      'browserName': 'chrome',
+        chromeOptions: {
+        args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+   }
+    },
+  ],
+
+
+  /*
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    'browserName': 'firefox'
   },
+  */
 
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
