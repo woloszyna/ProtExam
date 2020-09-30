@@ -7,13 +7,19 @@ var OpenAccount = function () {
         return header.getText();
     };
 
-
-
-
-
     this.accessLandingPage = function () {
         homeBtn.click();
         return require('./LandingPage');
+    };
+
+    this.accessAddCustomer = function () {
+        addCust.click();
+        return require('./AddCustomer');
+    };
+
+    this.accessCustomers = function () {
+        customersBtn.click();
+        return require('./Customers');
     };
     
 };

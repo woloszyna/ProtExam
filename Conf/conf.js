@@ -1,21 +1,22 @@
 var HtmlReporter = require('protractor-beautiful-reporter');
 // An example configuration file.
 exports.config = {
-  directConnect: true,
+  directConnect: false,
+
 
   // Capabilities to be passed to the webdriver instance.
   multiCapabilities: [
     {
       'browserName': 'firefox',
         'moz:firefoxOptions': {
-        args: [ "--headless" ]
+        //args: [ "--headless" ]
    }
     },
 
     {
       'browserName': 'chrome',
         chromeOptions: {
-        args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+        //args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
    }
     },
   ],

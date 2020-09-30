@@ -1,0 +1,4 @@
+Kill webdriver manager
+* kill -9 $(lsof -ti tcp:4444)
+
+www: https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login

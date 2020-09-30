@@ -271,56 +271,12 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
 
     var results = [
     {
-        "description": "Bank Account Manager can access 'Customers' page|Bank Manager's Login process",
-        "passed": false,
-        "pending": false,
-        "os": "mac os x",
-        "sessionId": "e05df63f046c8990b74482901ef2f1fd",
-        "instanceId": 7342,
-        "browser": {
-            "name": "chrome",
-            "version": "85.0.4183.121"
-        },
-        "message": [
-            "Failed: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome=85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'IEDUBM4046103A', ip: '2a02:8084:4ec3:f300:18f6:cf87:f42e:5e99%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14'\nDriver info: driver.version: unknown"
-        ],
-        "trace": [
-            "InvalidSelectorError: invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome=85.0.4183.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'IEDUBM4046103A', ip: '2a02:8084:4ec3:f300:18f6:cf87:f42e:5e99%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14'\nDriver info: driver.version: unknown\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.findElements(By(css selector, placeholder=\"Search Customer\"))\n    at thenableWebDriverProxy.schedule (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at thenableWebDriverProxy.findElements (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:1048:19)\n    at /usr/local/lib/node_modules/protractor/built/element.js:159:44\n    at ManagedPromise.invokeCallback_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: Run it(\"Bank Account Manager can access 'Customers' page\") in control flow\n    at UserContext.<anonymous> (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/albert.woloszyn/Projects/HighCode/JavaScript/ProtExam/Tests/experiments.spec.js:14:8)\n    at addSpecsToSuite (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/albert.woloszyn/Projects/HighCode/JavaScript/ProtExam/Tests/experiments.spec.js:5:1)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)"
-        ],
-        "browserLogs": [],
-        "screenShotFile": "00840046-004d-00f1-0010-000e00ea00e7.png",
-        "timestamp": 1601108224583,
-        "duration": 3856
-    },
-    {
-        "description": "Bank Account Manager can access 'Customers' page|Bank Manager's Login process",
-        "passed": false,
-        "pending": false,
-        "os": "mac",
-        "sessionId": "d86f62aa-bbcd-ed4e-98ee-4752e018fd8a",
-        "instanceId": 7341,
-        "browser": {
-            "name": "firefox",
-            "version": "79.0"
-        },
-        "message": [
-            "Failed: Given css selector expression \"placeholder=\"Search Customer\"\" is invalid: SyntaxError: Document.querySelectorAll: 'placeholder=\"Search Customer\"' is not a valid selector\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'IEDUBM4046103A', ip: '2a02:8084:4ec3:f300:18f6:cf87:f42e:5e99%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14'\nDriver info: driver.version: unknown"
-        ],
-        "trace": [
-            "InvalidSelectorError: Given css selector expression \"placeholder=\"Search Customer\"\" is invalid: SyntaxError: Document.querySelectorAll: 'placeholder=\"Search Customer\"' is not a valid selector\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'IEDUBM4046103A', ip: '2a02:8084:4ec3:f300:18f6:cf87:f42e:5e99%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14'\nDriver info: driver.version: unknown\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.findElements(By(css selector, placeholder=\"Search Customer\"))\n    at thenableWebDriverProxy.schedule (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at thenableWebDriverProxy.findElements (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver.js:1048:19)\n    at /usr/local/lib/node_modules/protractor/built/element.js:159:44\n    at ManagedPromise.invokeCallback_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: Run it(\"Bank Account Manager can access 'Customers' page\") in control flow\n    at UserContext.<anonymous> (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (/Users/albert.woloszyn/Projects/HighCode/JavaScript/ProtExam/Tests/experiments.spec.js:14:8)\n    at addSpecsToSuite (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/albert.woloszyn/Projects/HighCode/JavaScript/ProtExam/Tests/experiments.spec.js:5:1)\n    at Module._compile (internal/modules/cjs/loader.js:1201:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)\n    at Module.load (internal/modules/cjs/loader.js:1050:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:938:14)"
-        ],
-        "browserLogs": [],
-        "screenShotFile": "006c001b-004c-0046-002c-00fb00fc007c.png",
-        "timestamp": 1601108226493,
-        "duration": 3957
-    },
-    {
-        "description": "Bank Account Manager can access 'Customers' page|Bank Manager's Login process",
+        "description": "Header displayed on Bank Manager's Login Page|Bank Manager's Login process",
         "passed": true,
         "pending": false,
         "os": "mac os x",
-        "sessionId": "eec1eeb0fdcab0fcc963be2e55dd3be2",
-        "instanceId": 7466,
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
         "browser": {
             "name": "chrome",
             "version": "85.0.4183.121"
@@ -328,17 +284,35 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "00cf00a4-00b4-003f-00c4-0011002800a0.png",
-        "timestamp": 1601108316376,
-        "duration": 3380
+        "screenShotFile": "00fc00bd-001e-00fd-00ac-001400f20079.png",
+        "timestamp": 1601109396593,
+        "duration": 3209
     },
     {
-        "description": "Bank Account Manager can access 'Customers' page|Bank Manager's Login process",
+        "description": "All elements are displayed on the Bank Manager's Login Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "007d00aa-00ef-0043-0099-007b00de00a0.png",
+        "timestamp": 1601109400288,
+        "duration": 722
+    },
+    {
+        "description": "Header displayed on Bank Manager's Login Page|Bank Manager's Login process",
         "passed": true,
         "pending": false,
         "os": "mac",
-        "sessionId": "a0b353b9-58c4-6f4f-93a7-bb33742c7b7b",
-        "instanceId": 7465,
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
         "browser": {
             "name": "firefox",
             "version": "79.0"
@@ -346,9 +320,637 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "009e0073-002f-0036-0030-00b800010042.png",
-        "timestamp": 1601108317843,
-        "duration": 3392
+        "screenShotFile": "00d50036-006f-0067-006b-009b00530063.png",
+        "timestamp": 1601109398117,
+        "duration": 3683
+    },
+    {
+        "description": "All elements are displayed on the Bank Manager's Login Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00fc005d-00ee-0024-003a-006000710030.png",
+        "timestamp": 1601109401992,
+        "duration": 590
+    },
+    {
+        "description": "Bank Manager can revert back to the Landing Page from Login Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00a70013-005c-0065-0031-00170068003f.png",
+        "timestamp": 1601109401421,
+        "duration": 925
+    },
+    {
+        "description": "Bank Manager can revert back to the Landing Page from Login Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "009b006f-0046-00f0-006a-00e300a90065.png",
+        "timestamp": 1601109402782,
+        "duration": 700
+    },
+    {
+        "description": "Bank Account Manager can access 'Add Customer' page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "0086003c-00f1-0062-0014-001700080003.png",
+        "timestamp": 1601109403699,
+        "duration": 577
+    },
+    {
+        "description": "Bank Account Manager can access 'Add Customer' page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00850082-00ed-006b-00ad-004300db0097.png",
+        "timestamp": 1601109402883,
+        "duration": 1623
+    },
+    {
+        "description": "All elements are displayed on the 'Add Customer' Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00c2006e-007e-0086-0095-009a000f008f.png",
+        "timestamp": 1601109404994,
+        "duration": 450
+    },
+    {
+        "description": "All elements are displayed on the 'Add Customer' Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "003700bc-006e-00e6-00c9-001b00580079.png",
+        "timestamp": 1601109404545,
+        "duration": 1648
+    },
+    {
+        "description": "Bank Manager can revert back to the Landing Page from 'Add Customer' Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "003600c8-003e-008e-0014-00620084006f.png",
+        "timestamp": 1601109405934,
+        "duration": 926
+    },
+    {
+        "description": "Bank Manager can revert back to the Landing Page from 'Add Customer' Page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "007a006d-00fc-001a-00c0-009100da0063.png",
+        "timestamp": 1601109406362,
+        "duration": 1388
+    },
+    {
+        "description": "Bank Account Manager can access 'Open Account' page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "004d002a-00d1-0050-0044-00700081008b.png",
+        "timestamp": 1601109407226,
+        "duration": 1143
+    },
+    {
+        "description": "Bank Account Manager can access 'Open Account' page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "005f00ff-00d6-004b-0098-00bb00650025.png",
+        "timestamp": 1601109407911,
+        "duration": 1211
+    },
+    {
+        "description": "Bank Account Manager can access 'Customers' page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00f6004e-0089-00c3-00e9-00c2001100df.png",
+        "timestamp": 1601109408770,
+        "duration": 1772
+    },
+    {
+        "description": "Bank Account Manager can access 'Customers' page|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "003e0071-00cc-0056-0070-00d1006b00fe.png",
+        "timestamp": 1601109409300,
+        "duration": 2151
+    },
+    {
+        "description": "Customer can be successfully created|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "005400b1-008a-002f-006e-00490012001e.png",
+        "timestamp": 1601109411646,
+        "duration": 841
+    },
+    {
+        "description": "Customer can be successfully created|Bank Manager's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "001a0047-0001-00e1-0033-00b1009f0068.png",
+        "timestamp": 1601109410968,
+        "duration": 1831
+    },
+    {
+        "description": "All elements displayed on Customer's Login Page|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "007c008f-0001-0038-0032-0093008100c3.png",
+        "timestamp": 1601109413479,
+        "duration": 668
+    },
+    {
+        "description": "All elements displayed on Customer's Login Page|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "003b002d-008e-0045-0061-00a9002d006c.png",
+        "timestamp": 1601109412782,
+        "duration": 1808
+    },
+    {
+        "description": "All Customer names present in the dropdown|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "001b00b8-0040-0024-0057-00ba002600f8.png",
+        "timestamp": 1601109414515,
+        "duration": 719
+    },
+    {
+        "description": "All Customer names present in the dropdown|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "001900b9-0042-005d-0038-00b600ca00d3.png",
+        "timestamp": 1601109414831,
+        "duration": 1581
+    },
+    {
+        "description": "Hermoine Granger can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "000d0077-0078-0084-000e-0016007000c4.png",
+        "timestamp": 1601109415627,
+        "duration": 1176
+    },
+    {
+        "description": "Harry Potter can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "008300ca-0021-00dc-00f3-00ed006d00e9.png",
+        "timestamp": 1601109417206,
+        "duration": 727
+    },
+    {
+        "description": "Hermoine Granger can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00890088-0005-003a-002b-00c5002b0068.png",
+        "timestamp": 1601109416569,
+        "duration": 2167
+    },
+    {
+        "description": "Ron Weasly can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00ea0031-0020-00e8-00c7-00c30050002a.png",
+        "timestamp": 1601109418349,
+        "duration": 642
+    },
+    {
+        "description": "Albus Dumbledore can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "0094002f-0008-00a5-005d-00d700aa00d7.png",
+        "timestamp": 1601109419423,
+        "duration": 830
+    },
+    {
+        "description": "Harry Potter can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00b5008b-00db-001c-0068-0049006000f3.png",
+        "timestamp": 1601109418943,
+        "duration": 1632
+    },
+    {
+        "description": "Neville Longbottom can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "0025006c-0091-00d6-004d-00a200590062.png",
+        "timestamp": 1601109420715,
+        "duration": 862
+    },
+    {
+        "description": "Ron Weasly can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00ee00e7-009c-0024-0033-0076003800db.png",
+        "timestamp": 1601109420735,
+        "duration": 1764
+    },
+    {
+        "description": "Customer can log in and log out successfully|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00a10050-00bc-0060-007f-001b006a009c.png",
+        "timestamp": 1601109421958,
+        "duration": 1029
+    },
+    {
+        "description": "Customer Login process can return to the Landing Page|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "007000c7-00ff-00a1-0097-00ec004b0059.png",
+        "timestamp": 1601109423357,
+        "duration": 365
+    },
+    {
+        "description": "Albus Dumbledore can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "0016007f-005b-0052-007c-00d0008800f5.png",
+        "timestamp": 1601109422655,
+        "duration": 1681
+    },
+    {
+        "description": "Neville Longbottom can log in|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00430012-00cc-005b-00df-00e4009c00de.png",
+        "timestamp": 1601109424503,
+        "duration": 569
+    },
+    {
+        "description": "Bank Account Manager can access Bank Manager Login area|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac os x",
+        "sessionId": "cf4f274aa6a6635bee712ae40b295369",
+        "instanceId": 7954,
+        "browser": {
+            "name": "chrome",
+            "version": "85.0.4183.121"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "005b00e9-0040-0092-00b8-0064004f005f.png",
+        "timestamp": 1601109424121,
+        "duration": 766
+    },
+    {
+        "description": "Customer can log in and log out successfully|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00fd00fa-0097-00ed-0013-001800f4003d.png",
+        "timestamp": 1601109425233,
+        "duration": 1636
+    },
+    {
+        "description": "Customer Login process can return to the Landing Page|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00b900b5-0072-007d-00ba-002c00ea002e.png",
+        "timestamp": 1601109426986,
+        "duration": 1294
+    },
+    {
+        "description": "Bank Account Manager can access Bank Manager Login area|Customer's Login process",
+        "passed": true,
+        "pending": false,
+        "os": "mac",
+        "sessionId": "38cbeb9b-5b93-fb43-92d9-ee21fed9064f",
+        "instanceId": 7953,
+        "browser": {
+            "name": "firefox",
+            "version": "79.0"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "00a3002a-0013-000b-0086-00d200d700c4.png",
+        "timestamp": 1601109428399,
+        "duration": 1186
     }
 ];
 

@@ -56,21 +56,35 @@ describe('Bank Manager\'s Login process', function () {
         expect(custLoginBtn.isPresent()).toBe(true);
     });
     
-
-
-
-    it('Bank Account Manager can access xxxx page', function () {
-        
+    it('Bank Account Manager can access \'Open Account\' page', function () {
+        BankManagerLogin.accessOpenAccount();
+        var addCustomerBtn = element(by.buttonText('Add Customer'));
+        var openAccountBtn = element(by.buttonText('Open Account'));
+        var customersBtn = element(by.buttonText('Customers'));
+        var custDropdown = element(by.model('custId'));
+        var currencyDropdown = element(by.model('currency'));
+        var processBtn = element(by.buttonText('Process'));
+        expect(addCustomerBtn.isPresent()).toBe(true);
+        expect(openAccountBtn.isPresent()).toBe(true);
+        expect(customersBtn.isPresent()).toBe(true);
+        expect(custDropdown.isPresent()).toBe(true);
+        expect(currencyDropdown.isPresent()).toBe(true);
+        expect(processBtn.isPresent()).toBe(true);        
     });
 
-
-    //More tests go here
-
-    it('Bank Account Manager can access xxx page', function () {
-        
+    it('Bank Account Manager can access \'Customers\' page', function () {
+        BankManagerLogin.accessCustomers();
+        var addCustomerBtn = element(by.buttonText('Add Customer'));
+        var openAccountBtn = element(by.buttonText('Open Account'));
+        var customersBtn = element(by.buttonText('Customers'));
+        var searchBar = element(by.model('searchCustomer'));
+        var customersTable = element(by.css('.table'));
+        expect(addCustomerBtn.isPresent()).toBe(true);
+        expect(openAccountBtn.isPresent()).toBe(true);
+        expect(customersBtn.isPresent()).toBe(true);
+        expect(searchBar.isPresent()).toBe(true);
+        expect(customersTable.isPresent()).toBe(true);
     });
-
-    //More tests go here
 
 
     it('Customer can be successfully created', function () {

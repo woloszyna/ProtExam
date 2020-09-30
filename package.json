@@ -1,0 +1,20 @@
+{
+  "name": "protexam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor Conf/conf.js",
+    "start webdriver-manager": "webdriver-manager start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woloszyna/ProtExam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woloszyna/ProtExam/issues"
+  },
+  "homepage": "https://github.com/woloszyna/ProtExam#readme"
+}

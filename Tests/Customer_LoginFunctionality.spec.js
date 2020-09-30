@@ -13,13 +13,12 @@ describe('Customer\'s Login process', function () {
         expect(headerText).toBe('XYZ Bank');
         var dropDown = element(by.model('custId'));
         expect(dropDown.isPresent()).toBe(true);
-        //TODO: #3 Check if dropdown is present
     });
 
     it('All Customer names present in the dropdown', function () {
         var dropdownOptions = CustomerLoginPage.countDropdownOptions();
-        expect(dropdownOptions).toBe(6);
         CustomerLoginPage.expandDropdown();
+        expect(dropdownOptions).toBe(6);
     });
 
     it('Hermoine Granger can log in', function () {
